@@ -188,6 +188,7 @@
     <Compile Include="Controllers\MediaItemDataController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UserDataController.cs" />
+    <Compile Include="Controllers\UserMediaItemController.cs" />
     <Compile Include="Controllers\UserMediaItemDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -285,6 +286,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\MediaItem\" />
     <Folder Include="Views\UserData\" />
+    <Folder Include="Views\UserMediaItem\" />
     <Folder Include="Views\Users\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
