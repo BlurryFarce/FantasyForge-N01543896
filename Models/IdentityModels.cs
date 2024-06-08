@@ -25,6 +25,12 @@ namespace FantasyForge_N01543896.Models
         {
         }
 
+        public new DbSet<User> Users { get; set; }
+
+        public DbSet<MediaItem> MediaItems { get; set; }
+
+        public DbSet<UserMediaItem> UserMediaItems { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

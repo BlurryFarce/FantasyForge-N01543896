@@ -10,6 +10,7 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "FantasyForge_N01543896.Models.ApplicationDbContext";
         }
 
         protected override void Seed(FantasyForge_N01543896.Models.ApplicationDbContext context)

@@ -25,6 +25,9 @@ namespace FantasyForge_N01543896.Models
         public int? Rating { get; set; } // Rating between 0 and 10
         public string Review { get; set; }
         public string Status { get; set; } // "Playing", "Completed", "Watching", "Dropped"
+
+        public ICollection<User> Users { get; set; }
+
     }
 
     public class UserMediaItemDto
