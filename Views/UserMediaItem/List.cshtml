@@ -1,0 +1,13 @@
+﻿@model IEnumerable<FantasyForge_N01543896.Models.UserMediaItemDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+@foreach (var userMediaItem in Model) {
+    
+    <div>UserID: @userMediaItem.UserID</div>
+    <div>Rating: @userMediaItem.Rating</div>
+    <div>Status: @userMediaItem.Status</div>
+    <div>Review: @userMediaItem.Review</div>
+}

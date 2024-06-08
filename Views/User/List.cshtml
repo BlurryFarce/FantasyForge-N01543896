@@ -1,0 +1,14 @@
+﻿@model IEnumerable<FantasyForge_N01543896.Models.UserDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<a href="/User/New">New User</a>
+@foreach (var user in Model) {
+    <h2><a href="/User/Details/@user.UserID">@user.UserName</a></h2>
+    <div>Location: @user.Location</div>
+    <div>Bio: @user.Bio</div>
+    <div>FavoriteGenre: @user.FavoriteGenre</div>
+    <div>JoinDate: @user.JoinDate</div>
+}

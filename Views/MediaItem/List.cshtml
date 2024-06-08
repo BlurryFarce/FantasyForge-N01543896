@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FantasyForge_N01543896.Models.MediaItemDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<a href="/MediaItem/New">New MediaItem</a>
+@foreach (var mediaItem in Model) {
+    <h2><a href="/MediaItem/Details/@mediaItem.MediaItemID">@mediaItem.Title</a></h2>
+    <div>Type: @mediaItem.Type</div>
+    <div>Description: @mediaItem.Description</div>
+    <div>Release Date: @mediaItem.ReleaseDate</div>
+    <div>Genre: @mediaItem.Genre</div>
+}
+
